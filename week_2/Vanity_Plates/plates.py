@@ -21,10 +21,9 @@ def is_valid(s):
         return False
 
 def check(text):
-    look= len(text)
+    look= len(text) - 1
     while(True):
-        look -= 1
-        if text[look] != "." and text[look] != "," and text[look] != "?" and text[look] != "!" and text[look] != " " :
+        if text[look] not in [ "." ,  "," , "?" , "!" , " "] :
             if text[look].isalpha():
                 for _ in range(look):
                     if text[_].isalpha():
@@ -39,6 +38,5 @@ def check(text):
                 continue
         else:
             return False
-
 
 main()
