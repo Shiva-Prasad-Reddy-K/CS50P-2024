@@ -8,7 +8,7 @@ def main():
 def shorten(word):
     o_word = ""
     for i in word:
-        if i =="a" or i =="e" or i =="i" or i =="o" or i =="u" or i =="A" or i =="E" or i =="I" or i =="O" or i =="U":
+        if i in ("a","e","i","o","u","A","E","I","O","U"):
             pass
         else:
             o_word = o_word + i
