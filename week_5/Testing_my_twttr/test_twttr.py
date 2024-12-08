@@ -1,4 +1,4 @@
-from twttr import shorten
+from week_5.Testing_my_twttr.week6_twttr import shorten
 
 def test_lower():
     assert shorten("shiva") == "shv"
